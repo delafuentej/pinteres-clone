@@ -4,26 +4,34 @@ import Card from "../Card/Card";
 import "./List.scss";
 
 
-const List=()=>{
-    return (
+const List=(props)=>{
+    const {filter}=props;
+/*     console.log(term)
+ */    return (
         <section
         className="listContainer"
         >
-        {data.map((card)=>{
-           
-            return(
-               
-                <Card 
-                key={card._id} 
-                img={card.img} 
-                name={card.name}
-                />
-            )
+        {data.filter((card)=>{
+            const {name}=card;
+            console.log(name)
+    
+                return name.includes(filter);
+        })
+        .map((card)=>{
+            return <Card 
+            key={card._id} 
+            img={card.img} 
+            name={card.name}
+            />
         })}
+           
         </section>
-    );
+                
+            )
+        }
+        
 
 
-}
+
 
 export default List;

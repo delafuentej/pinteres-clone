@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Navbar.scss"
 
-const Navbar=()=>{
+const Navbar=(props)=>{
     return (
     
             <nav>
@@ -10,6 +10,10 @@ const Navbar=()=>{
                 type="text" 
                 placeholder="search"
                 className="searchInput"
+                onChange={(e)=>{
+                    props.handleSearch(e.target.value)
+
+                }}
                 />
 
 
