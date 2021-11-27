@@ -1,8 +1,15 @@
 import React from "react";
 
-const Card=()=>{
+const Card=(props)=>{
+    const{img,name}=props;
 
-    return <h2>Card</h2>
+    return (
+        <div>
+            <img src={img} alt={name} />
+            <p>{name}</p>
+
+        </div>
+    )
 }
 
 export default Card;
