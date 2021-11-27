@@ -2,12 +2,24 @@
     display:inline-flex;
     flex-direction: column;
     align-items: center;
-   align-content:center; 
+  /*  align-content:center;  */
     height:auto;
     background-color:black;
     color:white;
     margin:20px 0;
-    padding-top: 25px;
+    padding: 30px 0;
     border-radius: 20px;
-
+    position:relative;
+    .dataContainer{
+    
+        position:absolute;
+        bottom:50%;
+        width:100;
+       
+        background-color: rgba(128, 128, 128, 0.308);
+        color:greenyellow;
+        font-weight: bold;
+    }
 }
+
+

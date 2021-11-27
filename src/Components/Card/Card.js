@@ -8,8 +8,17 @@ const Card=(props)=>{
         <div
         className="cardContainer"
         >
-            <img src={img} alt={name} />
-            <p>{name}</p>
+            <div className="imgContainer">
+
+                <img src={img} alt={name} />    
+            </div>
+
+            <div className="dataContainer">
+
+                <p>{name}</p>
+            </div>
+           
+           
 
         </div>
     )
