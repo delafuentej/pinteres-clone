@@ -10,15 +10,26 @@
     padding: 30px 0;
     border-radius: 20px;
     position:relative;
+    cursor:pointer;
+    &:hover{
+        .dataContainer{
+            opacity:100;
+            transition:all 0.5s;
+        
+        }
+    }
     .dataContainer{
     
         position:absolute;
         bottom:50%;
         width:100;
+        opacity:0;
        
-        background-color: rgba(128, 128, 128, 0.308);
-        color:greenyellow;
+        background-color: rgba(8, 8, 8, 0.616);
+        color:white;
         font-weight: bold;
+        transition:all 0.5s;
+        
     }
 }
 
